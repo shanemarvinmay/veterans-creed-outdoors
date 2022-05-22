@@ -1,9 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 import Button from '@mui/material/Button';
+import Nav from './Nav';
 
 function App() {
-  return (<Button variant="contained">Material Design in React</Button>);
+  return (
+    <div>
+    <Nav />
+  <Button variant="contained">Material Design in React</Button>
+  </div>
+  );
   // return (
   //   <div className="App">
   //     <header className="App-header">
