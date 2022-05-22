@@ -2,13 +2,20 @@ import logo from './logo.svg';
 import './App.css';
 import Button from '@mui/material/Button';
 import Nav from './Nav';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+  },
+});
 
 function App() {
   return (
-    <div>
-    <Nav />
-  <Button variant="contained">Material Design in React</Button>
-  </div>
+    <ThemeProvider theme={darkTheme}>
+      <Nav />
+      <Button variant="contained">Material Design in React</Button>
+    </ThemeProvider>
   );
   // return (
   //   <div className="App">
