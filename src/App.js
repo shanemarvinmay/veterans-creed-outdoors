@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import Button from '@mui/material/Button';
 import Nav from './Nav';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import MainCard from './MainCard';
@@ -16,7 +15,6 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <Nav />
       <MainCard />
-      <Button variant="contained">Material Design in React</Button>
     </ThemeProvider>
   );
   // return (
