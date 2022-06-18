@@ -21,6 +21,7 @@ export default function Nav() {
                         color="inherit"
                         aria-label="menu"
                         sx={{ mr: 2 }}
+                        onClick={() => window.open('https://www.facebook.com/VCOOutdoors/')}
                     >
                         {/* <Facebook /> */}
                         <FacebookRounded />
